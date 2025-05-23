@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Reisen-Go/static/css/main.0da3b226.css",
-    "main.js": "/Reisen-Go/static/js/main.bae85aac.js",
+    "main.js": "/Reisen-Go/static/js/main.79367c44.js",
     "static/js/453.6574f443.chunk.js": "/Reisen-Go/static/js/453.6574f443.chunk.js",
     "static/media/img-contactanos.png": "/Reisen-Go/static/media/img-contactanos.f4321e5f3acbafd46590.png",
     "static/media/img-servicio.png": "/Reisen-Go/static/media/img-servicio.98f96602ccb36f2368f6.png",
@@ -36,11 +36,11 @@
     "static/media/renaut.png": "/Reisen-Go/static/media/renaut.622787985b05b3024c8b.png",
     "index.html": "/Reisen-Go/index.html",
     "main.0da3b226.css.map": "/Reisen-Go/static/css/main.0da3b226.css.map",
-    "main.bae85aac.js.map": "/Reisen-Go/static/js/main.bae85aac.js.map",
+    "main.79367c44.js.map": "/Reisen-Go/static/js/main.79367c44.js.map",
     "453.6574f443.chunk.js.map": "/Reisen-Go/static/js/453.6574f443.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0da3b226.css",
-    "static/js/main.bae85aac.js"
+    "static/js/main.79367c44.js"
   ]
 }
