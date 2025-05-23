@@ -1,0 +1,20 @@
+#carouselExampleCaptions{
+  height: 100%; /* 60% de la altura de la ventana del navegador */
+
+}
+#carouselExampleCaptions .carousel-inner img {
+  width: 100%;
+  height: 100%; /* La imagen ocupa todo el espacio del carrusel */
+  object-fit:cover; /* La imagen cubre el espacio sin distorsionarse */
+}
+nav {
+  background-color: transparent !important;
+  box-shadow: none !important; /* Para quitar cualquier sombra */
+  border: none !important; /* Para quitar bordes si los tiene */
+}
+#carouselExampleCaptions .carousel-control-prev,
+#carouselExampleCaptions .carousel-control-next {
+  display: none !important;
+}
+
+

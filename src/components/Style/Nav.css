@@ -1,0 +1,114 @@
+/* Contenedor general del nav */
+.conteiner-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: white;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+}
+
+/* Links al centro */
+.Conteiner-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 350;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+.nav-links a:hover {
+  color: #b5d02c;
+}
+
+.nav-links li {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+.nav-links li:hover {
+  border-color: #ff6666;  
+  background-color: #ff66667d; /* Color del fondo cuando pasa el cursor */
+}
+/* WhatsApp a la derecha */
+.whatsapp-link a {
+  display: flex;
+  align-items: center;
+}
+
+/* Botón hamburguesa oculto por defecto */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 768px) {
+  .conteiner-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 1000;
+  }
+
+  .Conteiner-links {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    margin-top: 0.1rem;
+  }
+
+  .Conteiner-links.open {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.1rem;
+    width: 100%;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 0.1rem 1rem;
+  }
+
+  .whatsapp-link {
+    margin-left: 0.6rem;
+    margin-top: 1rem;
+  }
+}
