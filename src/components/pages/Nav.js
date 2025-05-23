@@ -34,8 +34,8 @@ function Nav() {
         <ul className="nav-links">
             <li><HashLink smooth to="/#Inicio">Inicio</HashLink></li> {/* Usa Link de React Router */}
             <li><HashLink to="/#servicioss">Servicios</HashLink></li>
-            <li><HashLink to="/#Nosotros">Nosotros</HashLink></li>
-            <li><HashLink to="/#Contactanos">Contacto</HashLink></li>
+            <li><Link to="/nosotros">Nosotros</Link></li> 
+            <li><Link to="/contacto">Contacto</Link></li> 
           </ul> 
         </div>
 

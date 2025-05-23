@@ -4,7 +4,6 @@
   border-radius: 20px;          
   padding: 20px;
   margin-top: 20px;
-  
 }
 .logo-volvo{
   max-height: 50px !important; /* o cualquier otro tamaño */
@@ -74,6 +73,11 @@
   .carousel-control-next-icon{
     left: 100px;
   }
+  .carousel-inner{
+    justify-content: center;
+  align-items: center;
+  position: relative;
+  }
 @media screen and (max-width: 768px){
   .logo-icon{
     max-height: 40px !important;
@@ -93,6 +97,9 @@
 }
 .logo-ford{
   max-height: 25px !important;
+}  
+.carousel-control-next-icon{
+    width: 0px;
 }
 
 }

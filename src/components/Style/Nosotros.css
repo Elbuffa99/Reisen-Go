@@ -1,7 +1,7 @@
 section{
   text-align: center;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 83px;
 }
 
 .nosotros-section {
@@ -19,7 +19,7 @@ section{
 }
 .bannerimg2{
   width: 100%!important;
-  height: 100vh;
+  height: 648px;
   display: block;
   transition: filter 0.3s ease;
   Filter: blur(2px);

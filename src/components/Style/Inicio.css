@@ -1,12 +1,17 @@
+#Inicio{
+  padding-top: 80px;
+}
 #carouselExampleCaptions{
-  height: 100%; /* 60% de la altura de la ventana del navegador */
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#carouselExampleCaptions .carousel-inner{
+  width: 80%;
+}
 
-}
-#carouselExampleCaptions .carousel-inner img {
-  width: 100%;
-  height: 100%; /* La imagen ocupa todo el espacio del carrusel */
-  object-fit:cover; /* La imagen cubre el espacio sin distorsionarse */
-}
 nav {
   background-color: transparent !important;
   box-shadow: none !important; /* Para quitar cualquier sombra */
@@ -17,4 +22,31 @@ nav {
   display: none !important;
 }
 
+/* Indicadores normales */
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
 
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #000;
+}
+
+/* Responsivo para móviles */
+@media screen and (max-width: 768px) {
+  .carousel-indicators {
+    bottom: 10px !important; /* más cerca de la imagen */
+  }
+  #Inicio{
+  padding-top: 20px;
+}
+  .carousel-indicators button {
+    width: 8px!important;
+    height: 2px!important;
+    margin: 0 3px;
+    position: relative;
+    top: 26px!important;
+  }
+}
