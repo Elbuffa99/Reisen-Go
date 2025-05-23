@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Reisen-Go/static/css/main.0da3b226.css",
-    "main.js": "/Reisen-Go/static/js/main.79367c44.js",
+    "main.css": "/Reisen-Go/static/css/main.f46dfea1.css",
+    "main.js": "/Reisen-Go/static/js/main.f05fa82c.js",
     "static/js/453.6574f443.chunk.js": "/Reisen-Go/static/js/453.6574f443.chunk.js",
     "static/media/img-contactanos.png": "/Reisen-Go/static/media/img-contactanos.f4321e5f3acbafd46590.png",
     "static/media/img-servicio.png": "/Reisen-Go/static/media/img-servicio.98f96602ccb36f2368f6.png",
@@ -35,12 +35,12 @@
     "static/media/citroen.png": "/Reisen-Go/static/media/citroen.ddedb4392f49c7a0a772.png",
     "static/media/renaut.png": "/Reisen-Go/static/media/renaut.622787985b05b3024c8b.png",
     "index.html": "/Reisen-Go/index.html",
-    "main.0da3b226.css.map": "/Reisen-Go/static/css/main.0da3b226.css.map",
-    "main.79367c44.js.map": "/Reisen-Go/static/js/main.79367c44.js.map",
+    "main.f46dfea1.css.map": "/Reisen-Go/static/css/main.f46dfea1.css.map",
+    "main.f05fa82c.js.map": "/Reisen-Go/static/js/main.f05fa82c.js.map",
     "453.6574f443.chunk.js.map": "/Reisen-Go/static/js/453.6574f443.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0da3b226.css",
-    "static/js/main.79367c44.js"
+    "static/css/main.f46dfea1.css",
+    "static/js/main.f05fa82c.js"
   ]
 }
