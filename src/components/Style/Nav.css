@@ -1,38 +1,45 @@
-/* Contenedor general del nav */
+/* NAV general */
+nav {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #232323 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  min-height: 70px;
+}
+
+/* Contenedor principal */
 .conteiner-nav {
+  
+  width: 70%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  background-color: white;
-  flex-wrap: wrap;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-
-
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-
-}
-
-/* Logo */
-.logo img {
-  height: 50px;
-}
-
-/* Links al centro */
-.Conteiner-links {
-  flex: 1;
-  display: flex;
   justify-content: center;
+  padding: 0.5rem 2rem;
+  position: relative;
 }
 
+/* Contenedor del grupo centrado (logo + enlaces) */
+.center-group {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* Logo alineado a la izquierda pero dentro del grupo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+}
+
+/* Lista de navegación */
 .nav-links {
   display: flex;
-  gap: 5rem;
+  gap: 3rem;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -40,86 +47,60 @@
 
 .nav-links a {
   text-decoration: none;
-  color: black;
-  font-weight: 350;
-  transition: color 0.3s ease;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
   padding: 0.5rem 1rem;
-  border-radius: 10px;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #b5d02c;
+  color: #d12e74;
 }
 
-.nav-links li {
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 10px;
-  border: 2px solid transparent;
-}
-.nav-links li:hover {
-  border-color: #ff6666;  
-  background-color: #ff66667d; /* Color del fondo cuando pasa el cursor */
-}
-/* WhatsApp a la derecha */
-.whatsapp-link a {
-  display: flex;
-  align-items: center;
-}
-
-/* Botón hamburguesa oculto por defecto */
+/* Icono hamburguesa */
 .hamburger {
   display: none;
+  position: absolute;
+  right: 2rem;
+  color: white;
   cursor: pointer;
+  z-index: 1000;
 }
 
-/* RESPONSIVO */
+/* RESPONSIVE */
 @media screen and (max-width: 768px) {
   .conteiner-nav {
     flex-direction: column;
     align-items: flex-start;
-    
-
-    position: static; /* o relative */
-    box-shadow: none; /* opcional: quitar sombra en móvil */
+    padding: 1rem 1.5rem;
   }
 
-  .hamburger {
-    display: block;
-    position: absolute;
-    top: 1.5rem;
-    right: 2rem;
-    z-index: 1000;
-  }
-
-  .Conteiner-links {
+  .center-group {
     width: 100%;
-    display: none;
     flex-direction: column;
-    margin-top: 0.1rem;
-  }
-
-  .Conteiner-links.open {
-    display: flex;
+    align-items: flex-start;
+    padding-right: 3rem; /* Espacio para que no tape la hamburguesa */
   }
 
   .nav-links {
     flex-direction: column;
-    gap: 0.1rem;
     width: 100%;
+    gap: 0.5rem;
+    display: none;
   }
 
-  .nav-links li {
-    width: 100%;
+  .nav-links.open {
+    display: flex;
   }
 
+  .nav-links li,
   .nav-links a {
-    display: block;
     width: 100%;
-    padding: 0.1rem 1rem;
+    padding: 0.75rem 1rem;
   }
 
-  .whatsapp-link {
-    margin-left: 0.6rem;
-    margin-top: 1rem;
+  .hamburger {
+    display: block;
   }
 }

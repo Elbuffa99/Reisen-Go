@@ -49,7 +49,7 @@ function chunkArray(arr, size) {
 }
 
 export default function Inicio() {
-  const logosPerSlide = 6;                            // Logos por slide
+  const logosPerSlide = 3;                            // Logos por slide
   const logoGroups = chunkArray(allLogos, logosPerSlide);
 
   

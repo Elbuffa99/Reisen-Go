@@ -1,127 +1,191 @@
-section{
-  text-align: center;
-  align-items: center;
-  padding-top: 83px;
+.Nosotros{
+    width: 100%;
 }
-
-.nosotros-section {
-  padding: 60px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
-  justify-content: center; /* Esto centra los elementos dentro de la sección */
+.contenedor-Nosotros{
+  width: 70%;
+  margin: 0 auto;
 }
-.apartado-banner{
+.section-mv{
   width: 100%;
-  height: auto;
-  position: relative;
-  display: inline-block;
 }
-.bannerimg2{
-  width: 100%!important;
-  height: 648px;
-  display: block;
-  transition: filter 0.3s ease;
-  Filter: blur(2px);
-}
-.bannerimg2:hover {
-  Filter: none;
+.mv-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  flex-wrap: wrap;
 }
 
-.apartado-banner h3 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  position: absolute;
-  top: 65%;           /* Centrado vertical */
-  left: 50%;          /* Centrado horizontal */
-  transform: translate(-50%, -50%); /* Ajuste fino al centro */
-  color: rgb(255, 255, 255);
-  font-size: 24px;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-  padding: 10px;
-  border-radius: 5px; 
-  transition: font-size 0.3s ease;
+.mv-top p {
+  flex: 1 1 29.3%;
+  font-size: 1rem;
+  text-align: justify;
+  margin: 0;
 }
-.apartado-banner:hover h3 {
-  font-size: 40px;
+
+.img-nosotros {
+  width: 350px;
+  height: 300px;
+  border-radius: 8px;
 }
-.nosotros-item {
-  width: 25rem;
-  height: 294px;
+
+.mv-bottom{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  padding: 20px;
+}
+.nosotros-card{
+  width: 20rem;
+  height: auto; 
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra suave */
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nosotros-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.contenedor-valores{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
+  width: 100%;
+  padding-top: 50px; 
+}
+.section-valores{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: nowrap;
+}
+.nosotros-card-valores{
+  width: 250px;
+  height: 450px;
+  flex: 1 ;
+  padding: 20px;
+  flex-direction: column;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  border: 1px solid #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.valores-card-img{
+  width: 10rem;
+  height: auto;
+  padding: 15px;
+}
+.valores-card-body h3{
+  font-size: 1.5em;
+}
+.valores-3{
+  position: relative;
+  bottom: 24px;
+}
+.valores-2{
+  position: relative;
+  bottom: 1px;
+}
+
+/*Carrusel*/
+
+.contenedor-reseña{
+  width: 100%;
+  margin-bottom: 100px;
+}
+.carrusel-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+} 
+
+.comentario-card {
+  background-color: #d8d8d8;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  height: 200px;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  justify-content: space-between;
-  align-items: center; 
-  overflow: hidden;
-  margin-bottom: 20px; /* Espacio inferior entre tarjetas */
-  border: 1px solid #ffffff; /* Opcional: Añadir borde a las tarjetas */
-  border-radius: 10px; /* Esquinas redondeadas */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
-  background-color: rgb(255, 255, 255);
-  transition: height 1.5s ease-in-out;
+  justify-content: center;
+}
+.slick-slide > div {
+  padding: 0 10px; /* separación horizontal entre tarjetas */
+
+}
+.comentario-text {
+  font-style: italic;
+  margin-bottom: 1rem;
 }
 
-.nosotros-item:hover {
-  height: 520px;
+.comentario-nombre {
+  font-weight: bold;
+  color: #000000;
 }
-.nosotros-item .color1-2 {
-  opacity: 1;
-  width: 100%;
-  height: 50px;
-  background-color: bisque;
-  visibility: visible;
-  transition: opacity 1.0s ease-in-out, visibility 1.5s ease-in-out;
-}
+/*Fin Carrusel*/
 
-.nosotros-item:hover .color1-2 {
-  opacity: 0; /* Se desvanece */
-  visibility: hidden; /* Se oculta el div */
-}
-.nosotros-item img {
-  width: 100%;
-  height: 250px;
-  border-radius: 10px 10px 0px 0px;
-}
-
-.nosotros-item p {
-  max-width: 23rem;
-  font-size: 0.8rem;
-  color: #333;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  line-height: 2.6;
-}
-
-@media screen and (max-width: 768px){
-   .nosotros-item{
-    height: 14em;
-    width: 13rem;
-   }
-
-   .nosotros-item p {
-    font-size: 0.7rem;
-  }
-  .nosotros-section h2{
-    font-size: 0.8rem;
+@media(max-width: 1100px)  {
+  .mv-top {
+    flex-direction: column;
+    gap: 2rem;
   }
 
-  .color1{
-  width: 100%;
-  height: 20px;
-  background-color: aqua;
-  border-radius: 00px 0px 10px 10px;
 }
-.color2{
-  width: 100%;
-  height: 20px;
-  background-color: rgb(48, 70, 103);
-  border-radius: 00px 0px 10px 10px;
-}
-    .apartado-banner h3{
-     font-size: 10px;
-    }
-    .apartado-banner:hover h3 {
-    font-size: 13px;
-    }
+
+@media (max-width: 800px) {
+  .mv-top {
+    flex-direction: column;
+    gap: 2rem;
   }
+
+  .mv-top p,
+  .img-nosotros {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .mv-bottom {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .nosotros-card {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+/* Para section valores */
+.section-valores {
+    display: flex;
+    flex-direction: column; /* Cambia de horizontal a vertical */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 2rem; /* Agrega espacio entre los elementos */
+  }
+
+  .nosotros-card-valores {
+    width: 90%; /* Ancho de la tarjeta para pantallas más pequeñas */
+    margin-bottom: 2rem; /* Agrega un margen inferior entre las tarjetas */
+    padding: 1rem; /* Ajusta el padding si es necesario */
+  }
+
+  .valores-card-img {
+    width: 8rem; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
+    height: auto;
+  }
+
+}

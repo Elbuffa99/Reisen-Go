@@ -1,10 +1,37 @@
+/* Fondo y espaciado del footer */
 footer {
-    padding-top: 20px;
-    margin-top: 20px;
-  }
-  
+  padding-top: 20px;
+  background-color: #232323 !important;
+  margin-top: 20px;
+  color: white; /* Texto blanco por defecto */
+}
+
+/* Todos los párrafos, enlaces, íconos de texto */
+footer p,
+footer span,
+footer a,
+footer li {
+  color: white !important;
+}
+
+/* Títulos en turquesa */
+footer h6,
+footer h5,
+footer h4,
+footer h3 {
+  color: #00e6e6 !important; /* Turquesa */
+  font-size: 1.3em;
+}
+footer a{
+  transition: color 0.3s ease-in-out, font-size 0.1s ease-in-out;
+}
+footer a:hover{
+  color: #ffe81b !important;
+}
+
+/* Links internos (como los de navegación) */
 .link-footer {
-  color: #171717 !important;
+  color: white !important;
   text-decoration: none !important;
   transition: color 0.3s ease-in-out, font-size 0.1s ease-in-out;
 }
@@ -14,41 +41,43 @@ footer {
   color: #ffe81b !important;
 }
 
-  .Copyr a{
-    text-decoration: none !important;
-    transition: color 0.3s ease-in-out;
-    transition: font-size 0.1s ease-in-out;
-  }
-  .Copyr a:hover{
-    color: #5044cb!important;
-    font-size: 18px;
-  }
+/* Copyright area */
+.Copyr a {
+  text-decoration: none !important;
+  color: white !important;
+  transition: color 0.3s ease-in-out, font-size 0.1s ease-in-out;
+}
 
-.redes{
-    background-color: black;
+.Copyr a:hover {
+  color: #5044cb !important;
+  font-size: 18px;
 }
-a i{
-    color: black;
-}
+
+/* Iconos sociales */
 footer a {
-    text-decoration: none;
-  }
-  
-  .fa-facebook-f, .fa-x-twitter, .fa-instagram {
-    transition: color 0.5s ease-in-out;
-  }
+  text-decoration: none;
+}
 
-.fa-facebook-f:Hover {
-    color: #002472; /* Color de Facebook */
-  }
-  
-  .fa-x-twitter:Hover {
-    color: #171717; /* Color de Twitter */
-  }
-  
-  .fa-instagram:Hover {
-    color: #e4405f; /* Color de Instagram */
-  }
-  
-  
-  
+.fa-facebook-f,
+.fa-x-twitter,
+.fa-instagram {
+  transition: color 0.5s ease-in-out;
+  color: white !important;
+}
+
+.fa-facebook-f:hover {
+  color: #1877f2!important; /* Facebook azul */
+}
+
+.fa-x-twitter:hover {
+  color: #171717!important; /* Twitter negro */
+}
+
+.fa-instagram:hover {
+  color: #e4405f!important; /* Instagram rosa */
+}
+
+/* Opcional: asegurar texto blanco en íconos de contacto */
+footer i {
+  color: white !important;
+}
