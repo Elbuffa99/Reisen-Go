@@ -32,7 +32,6 @@ min-height: 100px; /* permite que crezca si es necesario */
 }
 .logo img {
   height: 150px;
-
 }
 /* Lista de navegación */
 .nav-links {
@@ -106,4 +105,13 @@ min-height: 100px; /* permite que crezca si es necesario */
     display: block;
     align-self: flex-end;
   }
+}
+@media screen and (max-width: 480px) {
+  nav {
+  min-height: 10px;
+}
+.logo img {
+  height: 80px;
+}
+
 }

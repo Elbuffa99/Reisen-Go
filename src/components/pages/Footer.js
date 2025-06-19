@@ -44,7 +44,7 @@ function Footer() {
                 </p>
                 <p>
                   <FontAwesomeIcon icon={faMapMarkerAlt} className="me-3" />
-                  Dirección: Jr.Prueba 765 La Molina
+                  Malecón de la Marina 150, Miraflores
                 </p>
               </div>
 
