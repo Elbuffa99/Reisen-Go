@@ -1,7 +1,7 @@
 {
   "name": "reisengo",
   "version": "0.1.0",
-  "homepage": "https://Elbuffa99.github.io/Reisen-Go",
+  "homepage": "https://reisengo.com",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
