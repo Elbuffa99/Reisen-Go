@@ -1,12 +1,25 @@
 .Nosotros{
     width: 100%;
 }
+.Nosotros h1{
+  padding-top: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #0a2f5a  ;
+}
 .contenedor-Nosotros{
   width: 70%;
   margin: 0 auto;
 }
 .section-mv{
   width: 100%;
+}
+.section-mv h3,h5{
+  font-family: 'Bebas Neue', sans-serif;
+  color: #07285f;
+}
+.section-mv p{
+  font-family: 'Noto Sans', sans-serif;
+  color: #07285f;
 }
 .mv-top {
   display: flex;
@@ -28,6 +41,8 @@
   width: 350px;
   height: 300px;
   border-radius: 8px;
+  position: relative;
+  bottom: 50px;
 }
 
 .mv-bottom{
@@ -53,53 +68,85 @@
   transform: translateY(-5px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
-
-.contenedor-valores{
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  height: 100%; 
-  width: 100%;
-  padding-top: 50px; 
+.nosotros-card p{
+  font-size: 15px;
 }
-.section-valores{
-  width: 100%;
+/* Contenedor principal */
+.contenedor-valores {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 5rem;
-  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
 }
-.nosotros-card-valores{
-  width: 250px;
-  height: 450px;
-  flex: 1 ;
-  padding: 20px;
+
+/* Estructura centrada y responsiva */
+.section-valores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Cada tarjeta de valor */
+.nosotros-card-valores {
+  width: 20rem;
+  height: 500px;
+  display: flex;
   flex-direction: column;
-  display: flex; 
-  align-items: center; 
   justify-content: space-between;
   border: 1px solid #ffffff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, border 0.4s ease-in-out;
   margin-bottom: 20px;
+  background-color: white;
 }
-.valores-card-img{
-  width: 10rem;
-  height: auto;
-  padding: 15px;
+
+/* Hover igual que en cards de servicios */
+.nosotros-card-valores:hover {
+  background-color: #e1ebfc;
+  border: 1px solid #90a5c9;
 }
-.valores-card-body h3{
-  font-size: 1.5em;
+
+/* Imagen arriba */
+.valores-card-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.valores-3{
-  position: relative;
-  bottom: 24px;
+
+/* Contenido de la tarjeta */
+.valores-card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
 }
-.valores-2{
-  position: relative;
-  bottom: 1px;
+
+/* Título de la tarjeta */
+.valores-card-body h3 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #07285f;
 }
+
+/* Texto de la tarjeta */
+.valores-card-text {
+  font-size: 0.9rem;
+  flex-grow: 1;
+  margin-bottom: 10px;
+  font-family: 'Noto Sans', sans-serif;
+  color: #03152e;
+}
+
 
 /*Carrusel*/
 
@@ -130,62 +177,127 @@
 }
 .comentario-text {
   font-style: italic;
+  font-family: 'Noto Sans', sans-serif;
   margin-bottom: 1rem;
+  font-size: 0.9rem;
+    margin: 0 auto;
 }
 
 .comentario-nombre {
   font-weight: bold;
-  color: #000000;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #000000;  
+  font-size: 1.2rem;
 }
 /*Fin Carrusel*/
 
-@media(max-width: 1100px)  {
-  .mv-top {
-    flex-direction: column;
-    gap: 2rem;
+
+@media(max-width: 1300px)  {
+  /*INICIO PARTE SUPERIOR*/
+.mv-top {
+  gap: 1rem;
+}
+  .section-mv h3,h5{
+    font-size: 28px;
   }
+  .section-mv p{
+    font-size: 13px;
+  }
+}
+.img-nosotros {
+  width: 300px;
+  height: 250px;
+}
+
+  /*FIN PARTE SUPERIOR*/
+
+@media(max-width: 1100px)  {
+  /*INICIO PARTE SUPERIOR*/
+.mv-top {
+  gap: 1rem;
+}
+.section-mv h3,h5{
+    font-size: 23px;
+}
+.section-mv p{
+    font-size: 10px;
+}
+.img-nosotros {
+  width: 250px;
+  height: 230px;
+}
+}
+
+@media(max-width: 1250px)  {
+  /*INICIO PARTE SUPERIOR*/
+.mv-top {
+  gap: 0.1rem;
+}
+.section-mv h3,h5{
+    font-size: 20px;
+}
+.section-mv p{
+    font-size: 13px;
+}
+.img-nosotros {
+  width: 250px;
+  height: 230px;
+}
+}
+@media(max-width: 1100px)  {
+  /*INICIO PARTE SUPERIOR*/
+.section-mv h3,h5{
+    font-size: 20px;
+}
+.section-mv p{
+    font-size: 10px;
+}
+.img-nosotros {
+  width: 250px;
+  height: 230px;
+}
+.nosotros-card{
+  width: 18rem;
+}
+}
+@media(max-width: 1000px)  {
+  /*INICIO PARTE SUPERIOR*/
+.section-mv h3,h5{
+    font-size: 20px;
+}
+.section-mv p{
+    font-size: 10px;
+}
+.img-nosotros {
+  width: 250px;
+  height: 230px;
+}
+.nosotros-card{
+  width: 16rem;
+}
+.mv-bottom{
+  gap: 2rem;
+}
 
 }
 
 @media (max-width: 800px) {
-  .mv-top {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
   .mv-top p,
   .img-nosotros {
     flex: 1 1 100%;
     width: 100%;
   }
-
+  .img-nosotros {
+  height: 280px;
+}
   .mv-bottom {
     flex-direction: column;
     align-items: center;
     padding: 2rem 0;
   }
-
   .nosotros-card {
     width: 90%;
     margin-bottom: 2rem;
   }
 /* Para section valores */
-.section-valores {
-    display: flex;
-    flex-direction: column; /* Cambia de horizontal a vertical */
-    align-items: center; /* Centra los elementos verticalmente */
-    gap: 2rem; /* Agrega espacio entre los elementos */
-  }
-
-  .nosotros-card-valores {
-    width: 90%; /* Ancho de la tarjeta para pantallas más pequeñas */
-    margin-bottom: 2rem; /* Agrega un margen inferior entre las tarjetas */
-    padding: 1rem; /* Ajusta el padding si es necesario */
-  }
-
-  .valores-card-img {
-    width: 8rem; /* Ajusta el tamaño de la imagen para pantallas pequeñas */
-    height: auto;
-  }
-
 }

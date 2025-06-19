@@ -5,26 +5,26 @@
   padding: 20px;
   margin-top: 20px;
 }
+/*INICIO LOGOS*/
 .logo-volvo{
-  max-height: 50px !important; /* o cualquier otro tamaño */
-  max-width: 200px !important;
+  width: 200px !important;
 }
 .logo-renaut{
-  max-height: 100px !important; /* o cualquier otro tamaño */
+  max-height: 120px !important; /* o cualquier otro tamaño */
   max-width: 200px !important;
 }
 .logo-toyota{
-  max-height: 100px !important; /* o cualquier otro tamaño */
+  max-height: 130px !important; /* o cualquier otro tamaño */
   max-width: 200px !important;
   top: 15px !important;
   position: relative;
 }
 .logo-chevro{
-  max-height: 50px !important; /* o cualquier otro tamaño */
+  max-height: 150px !important; /* o cualquier otro tamaño */
   max-width: 200px !important;
 }
 .logo-ford{
-  max-height: 50px !important; /* o cualquier otro tamaño */
+  max-height: 60px !important; /* o cualquier otro tamaño */
   max-width: 200px !important;
 }
 .logo-jauar{
@@ -32,10 +32,34 @@
   max-width: 200px !important;
 }
 .logo-lotus{
-  max-height: 105px !important; /* o cualquier otro tamaño */
+  max-height: 130px !important; /* o cualquier otro tamaño */
   max-width: 205px !important;
 }
+.logo-mini{
+  max-height: 130px !important; /* o cualquier otro tamaño */
+  max-width: 185px !important;
+}
+.logo-jeep{
+  max-height: 130px !important; /* o cualquier otro tamaño */
+  max-width: 165px !important;
+}
+.logo-subaru{
+   max-width: 155px !important;
+}
+.logo-mitsubishi{
+   max-width: 100px !important;
+}
+.logo-icon {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
 
+/* Efecto hover: agrandar */
+.logo-icon:hover {
+  transform: scale(1.15);
+  z-index: 2;
+}
+/*FIN LOGOS*/
   .logos_title{
     text-align: center;
     border-radius: 20px 50px;
@@ -48,12 +72,15 @@
     box-shadow: 
     0 4px 16px rgba(0, 0, 0, 0.1), 
     0 10px 10px rgba(15, 7, 65, 0.2);
- 
-    width: 590px;
+    width: 420px;
+    justify-content: center;
+    position: relative;
+    bottom: 50px;
   }
   .logos_title h2{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2m;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4em;
+    margin: 0 auto;
     color: hsl(0, 0%, 100%);
   }
   .logo-carousel .carousel-item svg:hover {

@@ -4,6 +4,8 @@
   "homepage": "https://reisengo.com",
   "private": true,
   "dependencies": {
+    "@fontsource/bebas-neue": "^5.2.6",
+    "@fontsource/noto-sans": "^5.2.7",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
@@ -12,7 +14,9 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.5",
+    "framer-motion": "^12.18.1",
     "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

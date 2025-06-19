@@ -1,27 +1,34 @@
 import React from 'react';
 import Slider from 'react-slick';
+
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
+ import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import { useEffect } from 'react';
+
+
+import '@fontsource/noto-sans';
+import '@fontsource/bebas-neue';
+
+import confianza from '../img/confianza..jpg';
+import personalizacion from '../img/personalizacion.jpg';
+import transparencia from '../img/transparencia.jpg';
+import logo from '../img/1.png';
 
 
 import '../Style/Nosotros.css';
 
 
-
-import nosotros from '../img/img-nosotros.png'
-
 const comentarios = [
-  { nombre: 'Juan Perez', texto: 'Excelente servicio, muy rápido y confiable.' },
-  { nombre: 'María Magdalena', texto: 'Los repuestos llegaron en perfectas condiciones.' },
-  { nombre: 'Carlos Carlin', texto: 'Atención personalizada, muy recomendable.' },
-  { nombre: 'Lucía De La Cruz', texto: 'Todo muy claro, llegó a tiempo. Muy profesional.' },
-  { nombre: 'Pedro Morales', texto: 'Buena asesoría, me ayudaron con todo.' },
-  { nombre: 'Juan Perez', texto: 'Excelente servicio, muy rápido y confiable.' },
-  { nombre: 'María Magdalena', texto: 'Los repuestos llegaron en perfectas condiciones.' },
-  { nombre: 'Carlos Carlin', texto: 'Atención personalizada, muy recomendable.' },
-  { nombre: 'Lucía De La Cruz', texto: 'Todo muy claro, llegó a tiempo. Muy profesional.' },
-  { nombre: 'Pedro Morales', texto: 'Buena asesoría, me ayudaron con todo.' },
+  { nombre: 'Miguel Cisneros', texto: 'Muy feliz con el guardafango y la suspensión neumática que me trajeron para mi Jeep Grand Cherokee Overland. Llegaron en 14 días, tal como se había prometido. ¡Recomendado!' },
+  { nombre: 'Sofía Mendoza', texto: 'Empresa seria y confiable. Necesitaba una ECU para mi BMW X4 del 2013 y lograron encontrarla e importarla, ya que en Perú no la conseguía por ningún lado.' },
+  { nombre: 'Adolfo Rodríguez', texto: 'Requería una cinta para la bolsa de aire de mi Mustang 2007. Reisen Go me la importó a un precio accesible y llegó en solo 15 días.' },
+  { nombre: 'Junior Salazar', texto: 'Buscaba soportes de motor para una Jeep Grand Cherokee 2018. Consulté en la concesionaria y no había stock, pero Reisen Go pudo importármelos sin problema. Muy agradecido.' },
+  { nombre: 'Moisés Huamantica', texto: 'Excelente atención. Me ayudaron a encontrar los repuestos compatibles para mi vehículo y resolvieron todas mis dudas.' },
+  { nombre: 'Franco Zegarra', texto: 'Al principio dudaba de la seriedad, pero me sorprendieron: recibí mis productos en solo 13 días. ¡Totalmente recomendado!' }, 
 ];
 
 
@@ -29,6 +36,14 @@ const comentarios = [
 
 
 function Nosotros() {
+
+            useEffect(()   => {
+        AOS.init({
+          duration: 1000, // duración de la animación en ms
+          once: true      // se ejecuta solo una vez
+        });
+      }, []);
+
  
    const settings = {
     dots: true,
@@ -55,7 +70,7 @@ function Nosotros() {
       <div className='contenedor-Nosotros'>
         <h1>Nosotros</h1>
         <hr/>
-        <div className='section-mv'>
+        <div className='section-mv' data-aos="zoom-out-up">
            <h3>¿Quienes Somos?</h3>
           <div className='mv-top'>
            
@@ -65,7 +80,7 @@ function Nosotros() {
                 Nos comprometemos a brindarle un servicio de importación personalizado, rápido y eficiente. Además, ofrecemos la modalidad Door to Door, lo que significa que entregamos su pedido directamente en sus manos, sin complicaciones.<br/>
                 Con Reisen Go, Importa seguro.
             </p>
-            <img src={nosotros} className="img-nosotros" alt="Nuestro equipo" />
+            <img src={logo} className="img-nosotros" alt="Nuestro equipo" />
           </div>
           <div className='mv-bottom'>
             <div className="nosotros-card">
@@ -86,50 +101,48 @@ function Nosotros() {
          <h1>Valores</h1>
          <hr/>
       
-        <div className='contenedor-valores'>
+            <div className='contenedor-valores'data-aos="flip-down">
+              <div className='section-valores'>
+                
+                <div className="nosotros-card-valores">
+                  <img src={confianza} className="valores-card-img" alt="imagen de confianza" />
+                  <div className="valores-card-body">
+                    <h3>Confianza</h3>
+                    <p className="valores-card-text">
+                      Nos esforzamos por generar relaciones duraderas basadas en la transparencia, la honestidad y la seguridad en cada operación de importación.
+                    </p>
+                  </div>
+                </div>
 
-          <div className='section-valores'>
-            <div className="nosotros-card-valores">
-              <img src={nosotros} className="valores-card-img" alt="..." />
-              <div className='valores-2'>
-              <div className="valores-card-body">
-                <h3>Confianza</h3>
-                <p className="valores-card-text">
-                  Nos esforzamos por generar relaciones duraderas basadas en la transparencia, la honestidad y la seguridad en cada operación de importación.
-                </p>
-              </div>
+                <div className="nosotros-card-valores">
+                  <img src={personalizacion} className="valores-card-img" alt="imagen de personalización" />
+                  <div className="valores-card-body">
+                    <h3>Personalización</h3>
+                    <p className="valores-card-text">
+                      Cada cliente es único. Brindamos un servicio cercano, ajustado a sus necesidades específicas, acompañándolo desde la cotización hasta la entrega.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="nosotros-card-valores">
+                  <img src={transparencia} className="valores-card-img" alt="imagen de transparencia" />
+                  <div className="valores-card-body">
+                    <h3>Transparencia</h3>
+                    <p className="valores-card-text">
+                      Comunicamos con claridad cada paso del proceso, para que el cliente siempre sepa dónde está su pedido y qué esperar.
+                    </p>
+                  </div>
+                </div>
+
               </div>
             </div>
 
-            <div className="nosotros-card-valores">
-              <img src={nosotros} className="valores-card-img" alt="..." />
-              <div className="valores-card-body">
-                <h3>Personalización</h3>
-                <p className="valores-card-text">
-                  Cada cliente es único. Brindamos un servicio cercano, ajustado a sus necesidades específicas, acompañándolo desde la cotización hasta la entrega.
-                </p>
-              </div>
-            </div>
-
-            <div className="nosotros-card-valores">
-              
-              <img src={nosotros} className="valores-card-img" alt="..." />
-              <div className='valores-3'>
-              <div className="valores-card-body">
-                <h3>Transparencia</h3>
-                <p className="valores-card-text">
-                  Comunicamos con claridad cada paso del proceso, para que el cliente siempre sepa dónde está su pedido y qué esperar.
-                </p>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
          <h1>Reseñas</h1>
         <hr/> 
        
-        <div className='contenedor-reseña'>
+        <div className='contenedor-reseña'data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" >
           <div className="carrusel-container">
             <Slider {...settings}>
               {comentarios.map((comentario, index) => (

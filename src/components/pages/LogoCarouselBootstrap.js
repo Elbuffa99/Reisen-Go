@@ -27,6 +27,10 @@ import toyota from '../img/toyota.png';
 import volkswagen from '../img/volkswagen.png';
 import volvo from '../img/volvo.png';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import { useEffect } from 'react';
 
 
 
@@ -49,7 +53,16 @@ function chunkArray(arr, size) {
 }
 
 export default function Inicio() {
-  const logosPerSlide = 3;                            // Logos por slide
+
+          useEffect(()   => {
+          AOS.init({
+            duration: 1000, // duración de la animación en ms
+            once: true      // se ejecuta solo una vez
+          });
+        }, []);
+
+
+  const logosPerSlide = 25;                            // Logos por slide
   const logoGroups = chunkArray(allLogos, logosPerSlide);
 
   
@@ -60,26 +73,14 @@ export default function Inicio() {
       <div id="logoCarousel" className="carousel slide" data-bs-ride="carousel">
         <div className='logos_title'>
           <div className='cont-titles'>
-            <h2>Nuestas Marcas</h2>
+            <h2>Nuestras Marcas</h2>
           </div>
         </div>
         {/* 1) Indicadores */}
-        <div className="carousel-indicators">
-          {logoGroups.map((_, idx) => (
-            <button
-              key={idx}
-              type="button"
-              data-bs-target="#logoCarousel"
-              data-bs-slide-to={idx}
-              className={idx === 0 ? 'active' : ''}
-              aria-current={idx === 0 ? 'true' : undefined}
-              aria-label={`Slide ${idx + 1}`}
-            />
-          ))}
-        </div>
+
 
         {/* 2) Slides */}
-            <div className="carousel-inner">
+            <div className="carousel-inner" data-aos="flip-down">
               {logoGroups.map((group, idx) => (
                 <div
                   key={idx}
@@ -102,7 +103,21 @@ export default function Inicio() {
                           ${logo === chevro ? 'logo-chevro' : ''}
                           ${logo === ford ? 'logo-ford' : ''}
                           ${logo === jauar ? 'logo-jauar' : ''}
+                          ${logo === audi ? 'logo-audi' : ''}
+                          ${logo === bmw ? 'logo-bmw' : ''}
+                          ${logo === citroen ? 'logo-citroen' : ''}
+                          ${logo === dodge ? 'logo-dodge' : ''}
+                          ${logo === honda ? 'logo-honda' : ''}
+                          ${logo === jeep ? 'logo-jeep' : ''}
+                          ${logo === lexus ? 'logo-lexus' : ''}
+                          ${logo === mercedez ? 'logo-mercedez' : ''}
+                          ${logo === mini ? 'logo-mini' : ''}
+                          ${logo === mitsubishi ? 'logo-mitsubishi' : ''}
                           ${logo === lotus ? 'logo-lotus' : ''}
+                          ${logo === nissan ? 'logo-nissan' : ''}
+                          ${logo === porche ? 'logo-porche' : ''}
+                          ${logo === subaru ? 'logo-subaru' : ''}
+                          ${logo === volkswagen ? 'logo-volkswagen' : ''}
                         `}
                         style={{ maxHeight: '100px', objectFit: 'contain' }}
                       />
@@ -111,27 +126,7 @@ export default function Inicio() {
                 </div>
               ))}
             </div>
-
-
         {/* 3) Controles Prev/Next */}
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#logoCarousel"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" aria-hidden="true" />
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#logoCarousel"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" aria-hidden="true" />
-          <span className="visually-hidden">Next</span>
-        </button>
       </div>
     </div>
     </div>

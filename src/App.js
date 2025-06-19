@@ -1,6 +1,9 @@
 import React from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
+import '@fontsource/noto-sans';
+import '@fontsource/bebas-neue';
+
 import Inicio from './components/pages/Inicio';
 import Contactanos from './components/pages/Contenedor_Contactanos';
 import Nav from './components/pages/Nav';
