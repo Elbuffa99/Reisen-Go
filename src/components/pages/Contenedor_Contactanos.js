@@ -47,7 +47,7 @@ function Contenedor_contactanos() {
                         </div>
                     </a>
                     <h3 className='titulo-contacto'>WhatsApp</h3>
-
+                    <p>+51 913 578 485</p>
                 </div>
 
                 <div className='card-contacto'>
@@ -58,7 +58,7 @@ function Contenedor_contactanos() {
                         </div>
                     </a>
                     <h3 className='titulo-contacto'>Teléfono</h3>
-                     <p>+51 913578485</p>
+                     <p>+51 913 578 485</p>
                 </div>
 
                 <div className='card-contacto'>

@@ -219,54 +219,144 @@
     flex-direction: column;
     align-items: center;
   }
+    /*Inicio texto banner*/
+  .banner-texto h2{
+    font-size: 1.2rem;
+  }
+  .banner-texto h3{
+    font-size: 0.6rem;
+  }
+  .Cont-cotiza{
+    width: 100px;
+    height: 25px;
+  }
+  .Cont-cotiza p{
+    font-size: 10px;
+  }
+  /*FIn texto banner*/
+
 }
 
 /* Breakpoint intermedio: ≤450px */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .banner-texto {
-    top: 14%;
+    top: 8%;
     left: 0.1%;
   }
 
   .banner-texto h2 {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .banner-texto h3 {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
   }
 
   .Cont-cotiza {
-    width: 50px;
-    height: 20px;
+    width: 80px;
+    height: 40px;
   }
 
   .Cont-cotiza a {
-    font-size: 7px;
+    font-size: 10px;
   }
 }
-
-/* Breakpoint más estrecho: ≤390px */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 500px) {
   .banner-texto {
-    top: 1%;
+    top: -2%;
     left: 0.1%;
   }
 
   .banner-texto h2 {
-    font-size: 0.36rem;
+    font-size: 1rem;
   }
 
   .banner-texto h3 {
-    font-size: 0.26rem;
+    font-size: 0.55rem;
   }
 
   .Cont-cotiza {
-    width: 40px;
-    height: 15px;
+    width: 80px;
+    height: 30px;
   }
 
   .Cont-cotiza a {
-    font-size: 4px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .banner-texto {
+    top: -4.5%;
+    left: 0.1%;
+    max-width: 50%;
+  }
+
+  .banner-texto h2 {
+    font-size: 1.16rem;
+  }
+
+  .banner-texto h3 {
+    font-size: 0.56rem;
+  }
+
+  .Cont-cotiza {
+
+    width: 60px;
+    height: 25px;
+  }
+
+  .Cont-cotiza a {
+    font-size: 8px;
+  }
+}
+/* Breakpoint más estrecho: ≤390px */
+@media screen and (max-width: 360px) {
+  .banner-texto {
+    top: -4.5%;
+    left: 0.1%;
+    max-width: 50%;
+  }
+
+  .banner-texto h2 {
+    font-size: 0.9rem;
+  }
+
+  .banner-texto h3 {
+    font-size: 0.56rem;
+  }
+
+  .Cont-cotiza {
+
+    width: 60px;
+    height: 25px;
+  }
+
+  .Cont-cotiza a {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .banner-texto {
+    top: -8.5%;
+    left: -4%;
+    max-width: 60%;
+  }
+
+  .banner-texto h2 {
+    font-size: 0.9rem;
+  }
+
+  .banner-texto h3 {
+    font-size: 0.56rem;
+  }
+
+  .Cont-cotiza {
+
+    width: 60px;
+    height: 25px;
+  }
+
+  .Cont-cotiza a {
+    font-size: 8px;
   }
 }

@@ -17,9 +17,10 @@ function Nav() {
         {/* Grupo centrado: Logo + Enlaces */}
         <div className={`center-group ${menuOpen ? 'open' : ''}`}>
           <div className="logo">
-            <img src={logo} alt="Logo" />
+            <HashLink smooth to="/#Inicio">
+              <img src={logo} alt="Logo" />
+            </HashLink>
           </div>
-
           <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
             <li><HashLink smooth to="/#Inicio">Inicio</HashLink></li>
             <li><HashLink to="/#servicioss">Servicios</HashLink></li>

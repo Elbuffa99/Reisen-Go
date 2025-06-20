@@ -52,7 +52,7 @@ function Footer() {
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Atención</h6>
                 <p>Lunes - Viernes</p>
-                <p>10 am - 8 pm</p>
+                <p>10:00 am - 8:00 pm</p>
               </div>
             </div>
           </div>

@@ -48,6 +48,11 @@
     transform: translateY(-5px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
+
+.card-contacto:hover .icono-contacto{
+    color: #03152e;
+}
+
 .card-contacto h3{
     font-family: 'Bebas Neue', sans-serif;
     padding-bottom: 10px;
@@ -80,7 +85,9 @@
     font-size: 0.75rem;
     color: white;
     font-family: 'Noto Sans', sans-serif;
+    transition: color 0.3s ease-in-out;
 }
+
 
 /* Títulos debajo del círculo */
 .titulo-contacto {
