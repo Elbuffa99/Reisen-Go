@@ -17,7 +17,7 @@ function Footer() {
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Reisen Go</h6>
                 <p>
-                  Especialistas en asesoría de exportación de repuestos automotrices. Brindamos orientación experta para facilitar la salida eficiente y legal de productos hacia mercados internacionales.
+                  Especialistas en asesoría de importación de repuestos automotrices. Brindamos orientación experta para facilitar la salida eficiente y legal de productos hacia mercados internacionales.
                 </p>
               </div>
 

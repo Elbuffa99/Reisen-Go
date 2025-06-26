@@ -86,13 +86,13 @@ function Nosotros() {
             <div className="nosotros-card">
                   <div className="nosotros-card-body">
                   <h5 className="nosotros-card-title">Misión</h5>
-                  <p className="nosotros-card-text">Somos una empresa importadora de repuestos vehiculares, especializada en ofrecer productos de alta calidad para una amplia variedad de marcas y modelos, desde autos comunes hasta vehículos de alta gama. Traemos repuestos desde EE. UU. y Europa, con precios competitivos, atención personalizada y entregas confiables.</p>
+                  <p className="nosotros-card-text">En Reisen Go, nuestra misión es brindar un servicio de importación personalizado, rápido y confiable, especializado en repuestos vehiculares, maquinaria y artículos tecnológicos provenientes de EE. UU., Europa y Asia. Nos enfocamos en ofrecer productos de alta calidad, con atención dedicada, precios competitivos y entregas seguras mediante la modalidad Door to Door.</p>
                   </div>
             </div>
             <div className="nosotros-card">
                   <div className="nosotros-card-body">
                   <h5 className="nosotros-card-title">Visión</h5>
-                  <p className="nosotros-card-text">Ser la empresa líder en Perú en la importación de repuestos vehiculares, reconocida por la variedad de productos, la excelencia en el servicio y la confiabilidad en cada entrega. Aspiramos a consolidarnos como el proveedor más confiable, superando expectativas y fortaleciendo el sector automotriz.</p>
+                  <p className="nosotros-card-text">Ser la empresa peruana líder en importación personalizada de repuestos vehiculares, maquinaria y artículos tecnológicos, reconocida por su confiabilidad, rapidez y compromiso con las necesidades de cada cliente. Aspiramos a transformar la experiencia de importación en Perú, brindando soluciones eficientes y accesibles desde los principales mercados del mundo.</p>
                   </div>
             </div>
           </div>

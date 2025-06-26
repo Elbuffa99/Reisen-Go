@@ -37,8 +37,7 @@ function Inicio() {
       <div className="Conteiner-Banner-Inicial">
         <img src={banner} className="img-banneri_ini" alt="Vehículo Moderno" />
         <div className="banner-texto" data-aos="fade-up">
-          <h2>EN REISENGO IMPORTA TUS PRODUCTOS DESDE ESTADOS UNIDOS, CHINA Y EUROPA HASTA PERÚ</h2>
-          <h3>¿Buscas repuestos de alta calidad, equipos electrónicos y artículos personales con rapidez y respaldo garantizado?</h3>
+          <h3>Importamos repuestos, maquinaria, tecnología y productos personales desde EE.UU., Europa y Asia. Asesoría personalizada y entrega directa.</h3>
           <h2>¡COTIZA CON NOSOTROS Y AL MEJOR PRECIO!</h2>
           <div className='Cont-cotiza'>
             <a href="https://wa.me/51913578485" target="_blank" rel="noopener noreferrer" >Cotiza Aquí</a>
